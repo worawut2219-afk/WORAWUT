@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คลังผลงานศิลปะและนิทรรศการ | หอศิลป์ร่วมสมัยลูมิแนร์</title>
+  <meta name="description" content="สำรวจและค้นหาผลงานศิลปะร่วมสมัย จิตรกรรม ประติมากรรม ภาพถ่าย และดิจิทัลอาร์ต คัดกรองตามหมวดหมู่และราคา พร้อมติดต่อสั่งซื้อผลงานกับศิลปินโดยตรง">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="คลังผลงานศิลปะและนิทรรศการ | หอศิลป์ร่วมสมัยลูมิแนร์">
+  <meta property="og:description" content="ชมนิทรรศการและคลังผลงานศิลปะร่วมสมัย พร้อมระบบคัดกรองหมวดหมู่ และการสั่งซื้อผลงานของแท้พร้อมใบรับรอง (COA)">
+  <meta property="og:image" content="images/art-painting-golden-dawn.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Fonts: Cinzel & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION (Consistent across all pages)
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="หอศิลป์ร่วมสมัยลูมิแนร์ หน้าแรก">
+        <img src="images/logo.svg" alt="โลโก้หอศิลป์ร่วมสมัยลูมิแนร์ Luminare Art Gallery" class="brand-logo-img">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+          <li><a href="gallery.html" class="nav-link active">ชมนิทรรศการ &amp; แกลเลอรี</a></li>
+          <li><a href="gallery.html?category=painting" class="nav-link">จิตรกรรม</a></li>
+          <li><a href="gallery.html?category=sculpture" class="nav-link">ประติมากรรม</a></li>
+          <li><a href="contact.html" class="nav-link">ติดต่อเรา &amp; สั่งซื้อ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="สลับโหมดสว่าง/มืด" title="สลับโหมดสว่าง/มืด">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Toggle Hamburger -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="เปิดเมนูนำทาง" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       MAIN CONTENT
+       =================================================================== -->
+  <main id="main-content">
+    
+    <!-- Page Banner -->
+    <section class="section-padding" style="padding-bottom: 2rem; background-color: var(--bg-tertiary);" aria-label="ส่วนหัวของคลังผลงาน">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 0;">
+          <span class="section-subtitle">Exhibition Catalog</span>
+          <h1>คลังผลงานศิลปะร่วมสมัย</h1>
+          <p class="section-description">
+            เลือกชมผลงานศิลปะต้นฉบับ คัดกรองตามหมวดหมู่ ความพร้อมจำหน่าย และระดับราคา ทุกชิ้นงานมาพร้อมใบรับรอง Certificate of Authenticity ประทับตราหอศิลป์
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Listing & Filter Section -->
+    <section class="section-padding" aria-label="รายการผลงานและการคัดกรอง">
+      <div class="container">
+        
+        <!-- Filter Toolbar -->
+        <div class="catalog-toolbar">
+          <!-- Real-time Search Bar -->
+          <div class="search-bar-wrapper">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="gallery-search-input" class="search-input" placeholder="ค้นหาผลงานตามชื่อภาพ, ชื่อศิลปิน, หรือเทคนิคการสร้างสรรค์..." aria-label="ค้นหาผลงานศิลปะ">
+            <button type="button" id="gallery-clear-search" class="clear-search-btn" aria-label="ล้างคำค้นหา">&times;</button>
+          </div>
+
+          <!-- Multi-criteria Filter Controls -->
+          <div class="filter-row">
+            <!-- Category Pills -->
+            <div class="category-filter-pills" role="tablist" aria-label="เลือกหมวดหมู่ผลงาน">
+              <button type="button" class="filter-pill is-active" data-category="all">ทั้งหมด</button>
+              <button type="button" class="filter-pill" data-category="painting">จิตรกรรม</button>
+              <button type="button" class="filter-pill" data-category="sculpture">ประติมากรรม</button>
+              <button type="button" class="filter-pill" data-category="photography">ภาพถ่าย</button>
+              <button type="button" class="filter-pill" data-category="digital">ดิจิทัลอาร์ต</button>
+            </div>
+
+            <!-- Secondary Filters: Availability & Sorting -->
+            <div class="filter-secondary-group">
+              <label for="gallery-filter-availability" class="sr-only">สถานะผลงาน</label>
+              <select id="gallery-filter-availability" class="select-filter" aria-label="กรองตามสถานะผลงาน">
+                <option value="all">สถานะ: ทั้งหมด</option>
+                <option value="available">เฉพาะพร้อมจำหน่าย</option>
+                <option value="sold">เฉพาะมีผู้สะสมแล้ว</option>
+              </select>
+
+              <label for="gallery-sort-select" class="sr-only">เรียงลำดับผลงาน</label>
+              <select id="gallery-sort-select" class="select-filter" aria-label="เรียงลำดับผลงาน">
+                <option value="newest">เรียงตาม: ล่าสุด (ปี ค.ศ.)</option>
+                <option value="price-asc">ราคา: ต่ำไปสูง</option>
+                <option value="price-desc">ราคา: สูงไปต่ำ</option>
+                <option value="title-asc">ชื่อผลงาน: ก - ฮ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Results Counter -->
+        <div class="results-count-bar">
+          <span id="gallery-results-count">กำลังโหลดผลงาน...</span>
+          <span style="font-size: 0.85rem; color: var(--text-tertiary);">* ราคาไม่รวมภาษีมูลค่าเพิ่มและกรอบจัดแสดงพิเศษ</span>
+        </div>
+
+        <!-- Artwork Grid (Populated dynamically by js/gallery.js) -->
+        <div class="art-grid" id="gallery-artworks-grid">
+          <!-- Artwork Cards will be rendered here -->
+        </div>
+
+        <!-- Empty State (Shown when no items match filters) -->
+        <div id="gallery-empty-state" class="empty-results-box" style="display: none;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            <line x1="8" y1="11" x2="14" y2="11"></line>
+          </svg>
+          <h3>ไม่พบผลงานที่ตรงกับเงื่อนไขการค้นหา</h3>
+          <p style="margin-top: 0.5rem; color: var(--text-secondary);">
+            โปรดลองปรับเปลี่ยนคำค้นหา หรือเลือกหมวดหมู่อื่นเพื่อรับชมผลงานเพิ่มเติม
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Public API Weather Visitor Advisory Widget -->
+    <section class="section-padding" style="background-color: var(--bg-tertiary); padding-top: 3.5rem; padding-bottom: 3.5rem;" aria-label="ข้อมูลสภาพอากาศเพื่อการเข้าชม">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="section-subtitle">Visitor Planning &amp; Weather API</span>
+          <h2>การวางแผนเข้าชมนิทรรศการจริง</h2>
+          <p class="section-description">
+            นอกจากเข้าชมออนไลน์ ท่านสามารถเดินทางมาสัมผัสเนื้อสัมผัสจริงของผลงานได้ที่หอศิลป์
+          </p>
+        </div>
+        <div class="weather-widget-card" id="gallery-weather-widget">
+          <!-- Populated by js/weather-api.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       ARTWORK DETAIL MODAL DIALOG (Interactive Quick View)
+       =================================================================== -->
+  <div class="modal-overlay" id="artwork-detail-modal" role="dialog" aria-modal="true" aria-label="รายละเอียดผลงานศิลปะ">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="ปิดหน้าต่างรายละเอียด">&times;</button>
+      <div class="modal-dynamic-content">
+        <!-- Rendered by js/gallery.js openDetailModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       FOOTER (Consistent across all pages)
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="โลโก้หอศิลป์ร่วมสมัยลูมิแนร์" style="height: 40px; width: auto; filter: brightness(1.2);">
+          <p>
+            หอศิลป์ร่วมสมัยลูมิแนร์ (Luminare Art Gallery) พื้นที่จัดแสดงและเชื่อมต่อศิลปินร่วมสมัยกับผู้สะสมงานศิลป์ทั่วโลก จัดแสดงผลงานของแท้พร้อมใบรับรองคุณภาพ
+          </p>
+          <div class="footer-social-links" aria-label="ลิงก์โซเชียลมีเดีย">
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook Luminare" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram Luminare" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="mailto:curator@luminaregallery.art" class="social-icon-btn" aria-label="Email Luminare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">หมวดหมู่นิทรรศการ</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">ผลงานทั้งหมด</a></li>
+            <li><a href="gallery.html?category=painting">ภาพจิตรกรรม</a></li>
+            <li><a href="gallery.html?category=sculpture">งานประติมากรรม</a></li>
+            <li><a href="gallery.html?category=photography">ภาพถ่ายวิจิตรศิลป์</a></li>
+            <li><a href="gallery.html?category=digital">ดิจิทัลอาร์ต &amp; 3D</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">ข้อมูลผู้เข้าชม</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">ขั้นตอนการสั่งซื้อ</a></li>
+            <li><a href="contact.html">ใบรับรองของแท้ (COA)</a></li>
+            <li><a href="contact.html">นัดหมายเข้าชมส่วนตัว</a></li>
+            <li><a href="admin.html" style="color: var(--accent-gold);">⚙️ ระบบหลังบ้าน (Admin)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">เวลาทำการ &amp; ที่ตั้ง</h4>
+          <div class="footer-hours-list">
+            <p><strong>อังคาร - อาทิตย์:</strong> 10:00 - 19:30 น.</p>
+            <p><strong>วันจันทร์:</strong> ปิดทำการ (ปรับปรุงห้องจัดแสดง)</p>
+            <p style="margin-top: 0.5rem;">
+              939 ถนนพระราม 1 แขวงวังใหม่ เขตปทุมวัน กรุงเทพฯ 10330 (BTS สถานีสนามกีฬาแห่งชาติ)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 หอศิลป์ร่วมสมัยลูมิแนร์ (Luminare Art Gallery &amp; Exhibition). สงวนลิขสิทธิ์ทุกประการ | นิทรรศการศิลปะออนไลน์</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/weather-api.js"></script>
+</body>
+</html>

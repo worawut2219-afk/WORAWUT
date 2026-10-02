@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>หอศิลป์ร่วมสมัยลูมิแนร์ | นิทรรศการศิลปะออนไลน์และการจัดแสดงผลงาน</title>
+  <meta name="description" content="สัมผัสประสบการณ์หอศิลป์ออนไลน์ นิทรรศการศิลปะร่วมสมัย ภาพจิตรกรรม ประติมากรรม ภาพถ่าย และดิจิทัลอาร์ต พร้อมระบบสั่งซื้อผลงานของแท้ ณ หอศิลป์ร่วมสมัยลูมิแนร์">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="หอศิลป์ร่วมสมัยลูมิแนร์ | นิทรรศการศิลปะออนไลน์และการจัดแสดงผลงาน">
+  <meta property="og:description" content="สัมผัสสุนทรียภาพแห่งศิลปะร่วมสมัย ค้นหาผลงานทรงคุณค่า และเชื่อมโยงผู้รักศิลปะกับศิลปินชั้นนำ">
+  <meta property="og:image" content="images/hero-gallery-banner.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Fonts: Cinzel (Display) & Prompt (Thai & Body) - Exactly 2 Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER & NAVIGATION (Consistent across all pages)
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link" aria-label="หอศิลป์ร่วมสมัยลูมิแนร์ หน้าแรก">
+        <img src="images/logo.svg" alt="โลโก้หอศิลป์ร่วมสมัยลูมิแนร์ Luminare Art Gallery" class="brand-logo-img">
+      </a>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav" id="main-nav" aria-label="เมนูหลัก">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">หน้าแรก</a></li>
+          <li><a href="gallery.html" class="nav-link">ชมนิทรรศการ &amp; แกลเลอรี</a></li>
+          <li><a href="gallery.html?category=painting" class="nav-link">จิตรกรรม</a></li>
+          <li><a href="gallery.html?category=sculpture" class="nav-link">ประติมากรรม</a></li>
+          <li><a href="contact.html" class="nav-link">ติดต่อเรา &amp; สั่งซื้อ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Dark Mode Toggle & Mobile Hamburger -->
+      <div class="header-actions">
+        <!-- Theme Switcher Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="สลับโหมดสว่าง/มืด" title="สลับโหมดสว่าง/มืด">
+          <!-- Sun Icon (for Dark Mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (for Light Mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Nav Toggle Hamburger -->
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="เปิดเมนูนำทาง" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       MAIN CONTENT
+       =================================================================== -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" aria-label="ไฮไลท์นิทรรศการหลัก">
+      <div class="hero-background-wrapper">
+        <img src="images/hero-gallery-banner.jpg" alt="บรรยากาศภายในหอศิลป์ร่วมสมัยลูมิแนร์พร้อมผู้เข้าชมนิทรรศการ" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            นิทรรศการใหญ่แห่งปี 2026
+          </div>
+          <h1 class="hero-title">หอศิลป์ร่วมสมัยลูมิแนร์ สุนทรียภาพไร้พรมแดน</h1>
+          <p class="hero-description">
+            เปิดมิติการเสพศิลป์สู่พื้นที่ออนไลน์ จัดแสดงผลงานศิลปะร่วมสมัยชิ้นเอก ทั้งจิตรกรรม ประติมากรรม ภาพถ่ายวิจิตรศิลป์ และดิจิทัลมีเดีย พร้อมระบบคัดกรองผลงานและการติดต่อซื้อ-ขายกับศิลปินโดยตรง
+          </p>
+          <div class="hero-actions">
+            <a href="gallery.html" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              เข้าชมผลงานทั้งหมด
+            </a>
+            <a href="contact.html" class="btn btn-outline-white">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              นัดหมายเข้าชม &amp; ติดต่อสั่งซื้อ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-section" aria-label="สถิติและข้อมูลหอศิลป์">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">250+</div>
+            <div class="stat-label">ผลงานศิลปะจัดแสดง</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">65+</div>
+            <div class="stat-label">ศิลปินร่วมจัดแสดง</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">นิทรรศการหมุนเวียน/ปี</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">ใบรับรองผลงานแท้ (COA)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open-Meteo Live Visiting & Weather Widget -->
+    <section class="section-padding" style="padding-bottom: 2rem;" aria-label="ข้อมูลบรรยากาศและสภาพอากาศหอศิลป์">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visiting Atmosphere</span>
+          <h2>บรรยากาศและสภาพอากาศ ณ หอศิลป์วันนี้</h2>
+          <p class="section-description">
+            เช็กสภาพอากาศสดเพื่อวางแผนการเดินทางมาดื่มด่ำงานศิลป์ ณ หอศิลป์ลูมิแนร์ ย่านปทุมวัน กรุงเทพฯ
+          </p>
+        </div>
+
+        <!-- Live Widget Container (Handled by js/weather-api.js) -->
+        <div class="weather-widget-card" id="gallery-weather-widget">
+          <!-- Populated by JavaScript fetch API -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Artworks Section -->
+    <section class="section-padding" aria-label="ผลงานเด่นประจำสัปดาห์">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Curator's Highlights</span>
+          <h2>ผลงานศิลปะไฮไลท์ประจำสัปดาห์</h2>
+          <p class="section-description">
+            คัดสรรชิ้นงานศิลปะที่มีความโดดเด่นทั้งเทคนิค แนวความคิด และคุณค่าทางสุนทรียศาสตร์
+          </p>
+        </div>
+
+        <div class="art-grid">
+          <!-- Card 1 -->
+          <article class="art-card">
+            <div class="art-card-media">
+              <img src="images/art-painting-golden-dawn.jpg" alt="ภาพจิตรกรรม รุ่งอรุณสีทอง โดย กฤษณะ วงศ์สวรรค์" class="art-card-img" loading="lazy">
+              <div class="art-card-badges">
+                <span class="badge badge-category">จิตรกรรม</span>
+                <span class="badge badge-available">● พร้อมจำหน่าย</span>
+              </div>
+            </div>
+            <div class="art-card-content">
+              <div class="art-card-meta">
+                <span>ปี ค.ศ. 2025</span>
+                <span>120 x 90 ซม.</span>
+              </div>
+              <h3 class="art-card-title">รุ่งอรุณสีทอง (Golden Dawn)</h3>
+              <p class="art-card-artist">กฤษณะ วงศ์สวรรค์</p>
+              <div class="art-card-specs">
+                <span class="art-card-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                  สีน้ำมันบนผืนผ้าใบ (Oil on Canvas)
+                </span>
+              </div>
+              <div class="art-card-footer">
+                <div>
+                  <div class="art-price-label">ราคาจำหน่าย</div>
+                  <div class="art-price-value">฿85,000</div>
+                </div>
+                <div class="art-card-actions">
+                  <a href="contact.html?artwork=รุ่งอรุณสีทอง" class="btn btn-primary btn-sm">ติดต่อสั่งซื้อ</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="art-card">
+            <div class="art-card-media">
+              <img src="images/art-sculpture-harmony.jpg" alt="ประติมากรรม สมดุลแห่งจิต โดย อัครพล ชนะศิลป์" class="art-card-img" loading="lazy">
+              <div class="art-card-badges">
+                <span class="badge badge-category">ประติมากรรม</span>
+                <span class="badge badge-available">● พร้อมจำหน่าย</span>
+              </div>
+            </div>
+            <div class="art-card-content">
+              <div class="art-card-meta">
+                <span>ปี ค.ศ. 2025</span>
+                <span>65 x 40 x 30 ซม.</span>
+              </div>
+              <h3 class="art-card-title">สมดุลแห่งจิต (Harmony of Soul)</h3>
+              <p class="art-card-artist">อัครพล ชนะศิลป์</p>
+              <div class="art-card-specs">
+                <span class="art-card-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                  หินอ่อนขาวและทองเหลืองขัดเงา
+                </span>
+              </div>
+              <div class="art-card-footer">
+                <div>
+                  <div class="art-price-label">ราคาจำหน่าย</div>
+                  <div class="art-price-value">฿145,000</div>
+                </div>
+                <div class="art-card-actions">
+                  <a href="contact.html?artwork=สมดุลแห่งจิต" class="btn btn-primary btn-sm">ติดต่อสั่งซื้อ</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="art-card">
+            <div class="art-card-media">
+              <img src="images/art-photo-bangkok-light.jpg" alt="ภาพถ่าย ทัศนียภาพแสงสยาม โดย ธีรเดช มหิทธา" class="art-card-img" loading="lazy">
+              <div class="art-card-badges">
+                <span class="badge badge-category">ภาพถ่าย</span>
+                <span class="badge badge-available">● พร้อมจำหน่าย</span>
+              </div>
+            </div>
+            <div class="art-card-content">
+              <div class="art-card-meta">
+                <span>ปี ค.ศ. 2025</span>
+                <span>90 x 60 ซม.</span>
+              </div>
+              <h3 class="art-card-title">ทัศนียภาพแสงสยาม</h3>
+              <p class="art-card-artist">ธีรเดช มหิทธา</p>
+              <div class="art-card-specs">
+                <span class="art-card-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  Archival Fine Art Print (Edition 1/5)
+                </span>
+              </div>
+              <div class="art-card-footer">
+                <div>
+                  <div class="art-price-label">ราคาจำหน่าย</div>
+                  <div class="art-price-value">฿42,000</div>
+                </div>
+                <div class="art-card-actions">
+                  <a href="contact.html?artwork=ทัศนียภาพแสงสยาม" class="btn btn-primary btn-sm">ติดต่อสั่งซื้อ</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="gallery.html" class="btn btn-outline" style="min-width: 220px;">
+            ดูผลงานทั้งหมดในคลัง (All Collections)
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current & Upcoming Exhibitions Section -->
+    <section class="section-padding" style="background-color: var(--bg-tertiary);" aria-label="นิทรรศการปัจจุบันและเร็วๆ นี้">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Current &amp; Upcoming</span>
+          <h2>นิทรรศการพิเศษประจำฤดูกาล</h2>
+          <p class="section-description">
+            ร่วมสัมผัสแนวคิดการจัดแสดงที่พาคุณเดินทางผ่านเรื่องราว ความคิด และบริบททางสังคม
+          </p>
+        </div>
+
+        <div class="exhibitions-grid">
+          <!-- Exhibition 1 -->
+          <article class="exhibition-card">
+            <div class="exhibition-media">
+              <img src="images/exhibition-siam-modern.jpg" alt="นิทรรศการ แสง เงา และจิตวิญญาณแห่งสยาม" loading="lazy">
+              <span class="exhibition-date-badge">15 ต.ค. - 30 พ.ย. 2026</span>
+            </div>
+            <div class="exhibition-info">
+              <h3>แสง เงา และจิตวิญญาณแห่งสยาม</h3>
+              <p class="exhibition-curator">ภัณฑารักษ์: ดร. ธนาคาร เกียรติบูรพา</p>
+              <p class="exhibition-summary">
+                การรวมตัวของผลงานจิตรกรรมและประติมากรรมกว่า 40 ชิ้นที่สำรวจการเปลี่ยนแปลงของวิถีชีวิตไทยในยุคเปลี่ยนผ่าน
+              </p>
+              <div style="margin-top: auto;">
+                <a href="gallery.html" class="btn btn-outline btn-sm">สำรวจห้องจัดแสดงนี้</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Exhibition 2 -->
+          <article class="exhibition-card">
+            <div class="exhibition-media">
+              <img src="images/exhibition-future-echoes.jpg" alt="นิทรรศการ เสียงสะท้อนแห่งอนาคต ดิจิทัลอาร์ต" loading="lazy">
+              <span class="exhibition-date-badge">1 ธ.ค. 2026 - 15 ม.ค. 2027</span>
+            </div>
+            <div class="exhibition-info">
+              <h3>เสียงสะท้อนแห่งอนาคต (Echoes of Tomorrow)</h3>
+              <p class="exhibition-curator">ภัณฑารักษ์: อภิชาต สินสมุทร</p>
+              <p class="exhibition-summary">
+                นิทรรศการศิลปะสื่อผสมผสานดิจิทัลและ 3D Generative Art ที่ตั้งคำถามต่อความสัมพันธ์ระหว่างมนุษย์และปัญญาประดิษฐ์
+              </p>
+              <div style="margin-top: auto;">
+                <a href="gallery.html?category=digital" class="btn btn-outline btn-sm">สำรวจห้องจัดแสดงนี้</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artist Spotlight Section -->
+    <section class="section-padding" aria-label="ศิลปินประจำเดือน">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 3.5rem; align-items: center;">
+          <div>
+            <img src="images/artist-curator.jpg" alt="ภาพถ่ายศิลปินและภัณฑารักษ์ พิมลดา สุวรรณสิทธิ์" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg);" loading="lazy">
+          </div>
+          <div>
+            <span class="section-subtitle">Artist Spotlight</span>
+            <h2>ศิลปินประจำเดือน: พิมลดา สุวรรณสิทธิ์</h2>
+            <p style="margin-bottom: 1.25rem;">
+              "ศิลปะไม่ใช่เพียงสิ่งที่มองเห็นด้วยตา แต่คือการเปิดพื้นที่ว่างในใจให้ผู้ชมได้พบกับความสงบแท้จริงของตนเอง"
+            </p>
+            <p style="margin-bottom: 2rem;">
+              พิมลดาเป็นศิลปินผู้สร้างสรรค์จิตรกรรมเชิงปรัชญาธรรมชาติ ผสานแผ่นทองคำเปลวและสีอะคริลิก ผลงานของเธอได้รับเกียรติติดตั้งในโรงแรมและแกลเลอรีชั้นนำทั่วเอเชีย
+            </p>
+            <a href="gallery.html?category=painting" class="btn btn-primary">
+              ชมผลงานของศิลปินท่านนี้
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       FOOTER (Consistent across all pages)
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="โลโก้หอศิลป์ร่วมสมัยลูมิแนร์" style="height: 40px; width: auto; filter: brightness(1.2);">
+          <p>
+            หอศิลป์ร่วมสมัยลูมิแนร์ (Luminare Art Gallery) พื้นที่จัดแสดงและเชื่อมต่อศิลปินร่วมสมัยกับผู้สะสมงานศิลป์ทั่วโลก จัดแสดงผลงานของแท้พร้อมใบรับรองคุณภาพ
+          </p>
+          <div class="footer-social-links" aria-label="ลิงก์โซเชียลมีเดีย">
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook Luminare" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram Luminare" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="mailto:curator@luminaregallery.art" class="social-icon-btn" aria-label="Email Luminare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">หมวดหมู่นิทรรศการ</h4>
+          <ul class="footer-links">
+            <li><a href="gallery.html">ผลงานทั้งหมด</a></li>
+            <li><a href="gallery.html?category=painting">ภาพจิตรกรรม</a></li>
+            <li><a href="gallery.html?category=sculpture">งานประติมากรรม</a></li>
+            <li><a href="gallery.html?category=photography">ภาพถ่ายวิจิตรศิลป์</a></li>
+            <li><a href="gallery.html?category=digital">ดิจิทัลอาร์ต &amp; 3D</a></li>
+          </ul>
+        </div>
+
+        <!-- Visitor Info -->
+        <div>
+          <h4 class="footer-heading">ข้อมูลผู้เข้าชม</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">ขั้นตอนการสั่งซื้อ</a></li>
+            <li><a href="contact.html">ใบรับรองของแท้ (COA)</a></li>
+            <li><a href="contact.html">นัดหมายเข้าชมส่วนตัว</a></li>
+            <li><a href="admin.html" style="color: var(--accent-gold);">⚙️ ระบบหลังบ้าน (Admin)</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours & Venue -->
+        <div>
+          <h4 class="footer-heading">เวลาทำการ &amp; ที่ตั้ง</h4>
+          <div class="footer-hours-list">
+            <p><strong>อังคาร - อาทิตย์:</strong> 10:00 - 19:30 น.</p>
+            <p><strong>วันจันทร์:</strong> ปิดทำการ (ปรับปรุงห้องจัดแสดง)</p>
+            <p style="margin-top: 0.5rem;">
+              939 ถนนพระราม 1 แขวงวังใหม่ เขตปทุมวัน กรุงเทพฯ 10330 (BTS สถานีสนามกีฬาแห่งชาติ)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 หอศิลป์ร่วมสมัยลูมิแนร์ (Luminare Art Gallery &amp; Exhibition). สงวนลิขสิทธิ์ทุกประการ | นิทรรศการศิลปะออนไลน์</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/weather-api.js"></script>
+</body>
+</html>
